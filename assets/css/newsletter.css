@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container span{
+    padding: 1rem;
+}
+h1{
+    color: #fff;
+}
+.btn{
+    margin-bottom: 1.5rem;
+}

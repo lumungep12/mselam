@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title{
+    text-align: center;
+    padding: 1rem;
+    color: #fff;
+}
+.content{
+    display: flex;
+    flex: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.mselam,
+.bio{
+    padding-top: 5rem;;
+}
+.bio h1{
+    font-size: 4rem;
+}
+.bio p{
+    letter-spacing: 2px;
+    font-size: 1rem;
+}
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .content{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .mselam img{
+        width: 100%;
+    }
+}

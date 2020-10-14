@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block page_content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="col-md-8 offset-md-2">
+    <h1><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Blog</h1>
+    <hr>
+    {% for post in posts %}
+    <h2><a href="{% url 'blogDetails' post.pk%}">{{ post.title }}</a></h2>
+    <small>
+        {{ post.createdOn.date }} |&nbsp;
+        Categories:&nbsp;
+        {% for category in post.categories.all %}
+        <a href="{% url 'blogCategory' category.name %}">
+            {{ category.name }}
+        </a>&nbsp;
+        {% endfor %}
+    </small>
+    <p>{{ post.body | slice:":400" }}...</p>
+    {% endfor %}
+</div>
+</body>
+</html>
+{% endblock %}

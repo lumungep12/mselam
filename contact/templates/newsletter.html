@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block page_content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Newsletter</title>
+<link rel="stylesheet" href="/static/css/newsletter.css">
+</head>
+<body>
+<div class="container">
+<h1>Our Newsletter Entails</h1>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea rem ratione quam
+blanditiis exercitationem, reiciendis nostrum vitae sed, ex doloribus odit fuga aspernatur ducimus iste 
+dignissimos placeat nam officia repellat similique minima repudiandae. Illum eos non facilis, laudantium ipsam nam unde rerum, 
+nulla repellat eveniet repellendus in fugit hic praesentium sequi? Cumque, alias, quia magni doloremque excepturi sunt dignissimos 
+cupiditate eius nobis accusamus nulla vitae. Eius, optio illo eos architecto et esse exercitationem sint totam consectetur nisi modi, 
+quod voluptatum laboriosam doloribus dignissimos facere. Corrupti explicabo, commodi suscipit laboriosam ullam ex repellat neque, dolorum 
+modi in hic magnam soluta reiciendis optio consectetur libero maiores vero porro voluptate corporis repellendus quos. Laborum adipisci veniam delectus
+amet ipsam hic, illo unde accusamus officia deserunt asperiores sint quaerat harum. Eaque magni nulla distinctio corporis fuga reiciendis, 
+in culpa quod illo, id, minus expedita aperiam? Ipsam fuga deserunt consequatur voluptatibus perferendis beatae error sunt porro rem quos eaque
+alias ipsum animi aperiam dolorum assumenda nostrum illo aliquid, ea eos? Earum mollitia iste minus porro nemo cumque modi perspiciatis, 
+odit adipisci nostrum consequatur cum repellat laboriosam quo 
+nihil molestias qui recusandae repudiandae voluptas. Consequuntur quo tenetur expedita amet, a maxime neque nemo necessitatibus quaerat 
+consectetur.</p>
+<span>Leave Us You Email Address For Updates.</span>
+<form action="newsletter" class="formation" method="POST">
+{% csrf_token %}
+<div class="form-group">
+{{ form.mail }}
+</div>
+<button type="submit" class="btn btn-primary">Subscribe</button>
+</form>
+</div>
+</body>
+</html>
+{% endblock %}

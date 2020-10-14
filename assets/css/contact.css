@@ -1,0 +1,36 @@
+.sector{
+    display: flex;
+    flex: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.vector img{
+    width: 600px;
+    height: 600px;
+    /* margin-right: 4rem; */
+}
+.formation{
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 1rem;
+    /* margin-left: 2rem; */
+}
+.formation h3{
+    color: #000;
+    font-weight: 500;
+}
+.details{
+    text-align: center;
+    color: #000
+}
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .sector{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .vector img{
+        width: 100%;
+    }
+}
