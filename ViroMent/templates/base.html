@@ -22,9 +22,7 @@
         <li class="nav-item active">
           <a class="nav-link text-light text-uppercase" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-light text-uppercase" href="{% url 'about' %}">About Us</a>
-        </li>
+        
         <li class="nav-item dropdown">
           <a class="nav-link text-light text-uppercase dropdown-toggle" href="{% url 'services' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Services
@@ -42,11 +40,11 @@
         <li class="nav-item">
             <a class="nav-link text-light text-uppercase" href="{% url 'blogIndex' %}">Blog</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link text-light text-uppercase" href="{% url 'about' %}">About</a>
+          </li>
         <li class="nav-item">
-          <a class="nav-link text-light text-uppercase" href="#!" tabindex="-1" aria-disabled="true">Careers</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-light text-uppercase" href="{% url 'contact' %}">Contact Us</a>
+            <a class="nav-link text-light text-uppercase" href="{% url 'contact' %}">Contacts</a>
           </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
